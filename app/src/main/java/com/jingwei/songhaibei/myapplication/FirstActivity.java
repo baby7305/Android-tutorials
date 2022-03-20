@@ -20,6 +20,7 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.baidu.com"));
+                intent.setClassName("com.jingwei.songhaibei.myapplication","com.jingwei.songhaibei.myapplication.SecondActivity");
                 startActivity(intent);
             }
         });
